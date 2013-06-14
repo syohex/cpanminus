@@ -1265,7 +1265,7 @@ sub chdir {
 sub configure_mirrors {
     my $self = shift;
     unless (@{$self->{mirrors}}) {
-        $self->{mirrors} = [ 'http://www.cpan.org' ];
+        $self->{mirrors} = [ 'http://cpan.metacpan.org' ];
     }
     for (@{$self->{mirrors}}) {
         s!^/!file:///!;
